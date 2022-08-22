@@ -52,9 +52,9 @@ Thank to the naming convention, exercises can be identified from other elements 
 
 ## Build and Run the project
 
-Just run the *build.sh* or *rebuild.sh* script within [cmake_build_resources](https://github.com/ppradillos/algorithm-exercises-cpp/tree/master/cmake_build_resources). The scripts assume a toolchain file is provided and located in the same folder, such as the one provided by this project. After building the project, a new "_build" folder should show up in the root folder of the project. If the user navigates into this new folder, an "_install" folder will feature all the binaries generated to run the exercises.
+Just run the *build.sh* or *rebuild.sh* script within [cmake_build_resources](https://github.com/ppradillos/algorithm-exercises-cpp/tree/master/cmake_build_resources) folder. The scripts assume a toolchain file is provided and located in the same folder, such as the one provided by this project. After building the project, a new "_build" folder should show up in the root folder of the project. If the user navigates into this new folder, an "_install" folder will feature all the binaries generated to run the exercises.
 
-**WARNING!** GNU/Linux assumed to be the build and testing environment. GNU compiler assumed as toolchain. If not the case, please modify both the root CMakeLists file of the project and the toolchain file accordingly in your local machine. Other enviroments and toolchains such as Windows and MSVC will be considered in the future.
+**WARNING!** GNU/Linux assumed to be the build and testing environment. GNU compiler assumed as toolchain. If not the case, please modify both the [root CMakeLists](https://github.com/ppradillos/algorithm-exercises-cpp/blob/master/CMakeLists.txt) file of the project and the [toolchain file](https://github.com/ppradillos/algorithm-exercises-cpp/blob/master/cmake_build_resources/toolchain-linux.cmake) accordingly in your local machine. Other enviroments and toolchains such as Windows and MSVC will be considered in the future.
 
 ## License
 None.
