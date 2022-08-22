@@ -13,7 +13,7 @@ Work in progress. More exercises will be added over time to the project structur
 
 **Exercises are considered individual programs themselves**. Therefore, they have their own sub-project folder within the root of the main "algorithm-exercises-cpp" project, so they can be treated separately from each other. In addition, they hold a snake case naming convention and suffix *_exercise* in the folder's name. E.g.: "3_sum_0_magic_triplet_exercise".
 
-Within every exercise project a specific README file will feature information about what problem or exercise is the solution made for, and how the solution has been designed/approached to serve as a guideline to make sense of the implementation, if necessary.
+Within every exercise project a specific README file will feature the problem statement, so that the user can have an insight of it, along with the explanation of the solution provided to the problem, in order to serve as a guideline to make sense of the implementation, if necessary.
 
 This is a C/C++ project and many executables can be generated out of it, so CMake has been used to create a build environment for all these little projects. The main project features a top-level CMakeList text file, and then every single sub-project features its own CMakeList file in the sub-project folder. This way, all sub-projects can be built at once with a single `make` command.
 
@@ -27,16 +27,16 @@ Then, this is the resulting project structure:
         * toolchain file provided as example
     * project_name1_exercise
         * CMAkeLists.txt
-        * README text file
+        * README text file with statement and solution
         * /src
         * /include
     * project_name2_exercise
-        * README text file
+        * README text file with statement and solution
         * CMAkeLists.txt
         * /src
         * /include
     * project_name3_exercise
-        * README text file
+        * README text file with statement and solution
         * CMAkeLists.txt
         * /src
         * /include
