@@ -48,7 +48,7 @@ Thank to the naming convention, exercises can be identified from other elements 
 
 | SR No | Exercise |
 | ------ | ------ |
-|1 | [3 sum 0 Magic Triplet](https://github.com/ppradillos/algorithm-exercises-cpp/tree/master/3_sum_0_magic_triplet) |
+|1 | [3 sum 0 Magic Triplet](https://github.com/ppradillos/algorithm-exercises-cpp/tree/master/3_sum_0_magic_triplet_exercise) |
 
 ## Build and Run the project
 
