@@ -151,7 +151,7 @@ int main()
     // print the found magic triplets
     if(triplets.empty())
     {
-        std::cout << "No magic triplets found:\n";    
+        std::cout << "No magic triplets found\n";    
     }
     else
     {
