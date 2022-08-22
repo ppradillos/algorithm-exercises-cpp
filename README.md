@@ -17,13 +17,13 @@ Within every exercise project a specific README file will feature information ab
 
 This is a C/C++ project and many executables can be generated out of it, so CMake has been used to create a build environment for all these little projects. The main project features a top-level CMakeList text file, and then every single sub-project features its own CMakeList file in the sub-project folder. This way, all sub-projects can be built at once with a single `make` command.
 
-As CMake can be tricky for newcomers, a folder with [build scripts](https://github.com/ppradillos/algorithm-exercises-cpp/tree/master/build_script_example) is provided to help users build the project and get all the binaries for further testing. A toolchain file is also provided in the same folder, but please keep in mind that the path to C/C++ toolchain and compiler flags can vary between users, so just use it as a reference.
+As CMake can be tricky for newcomers, a folder with [build resources](https://github.com/ppradillos/algorithm-exercises-cpp/tree/master/cmake_build_resources) is provided to help users build the project and get all the binaries for further testing. A basic [toolchain file](https://github.com/ppradillos/algorithm-exercises-cpp/blob/master/cmake_build_resources/toolchain-linux.cmake) is also provided in the same folder, but please keep in mind that the path to C/C++ toolchain and compiler flags can vary between environments, so just use it as a reference.
 
 Then, this is the resulting project structure:
 * Root project folder
     * CMakeLists.txt
-    * build_resources_folder
-        * scripts
+    * cmake_build_resources
+        * build scripts
         * toolchain file provided as example
     * project_name1_exercise
         * CMAkeLists.txt
@@ -42,7 +42,7 @@ Then, this is the resulting project structure:
         * /include
     * ...
 
-Thank to the naming convention exercises can be identified from other elements of the project, such as the build resources.
+Thank to the naming convention, exercises can be identified from other elements of the project, such as the build resources.
 
 ## Table of exercises
 
@@ -52,7 +52,9 @@ Thank to the naming convention exercises can be identified from other elements o
 
 ## Build and Run the project
 
-Just run the "build.sh" or "rebuild.sh" script within "build_resources_folder". The scripts assume a toolchain file is provided and located in the same folder. After building the project, a new "_build" folder should show up in the root folder of the project. If the user navigates into this new folder, an "_install" folder will feature all the binaries generated to run the exercises.
+Just run the *build.sh* or *rebuild.sh* script within [cmake_build_resources](https://github.com/ppradillos/algorithm-exercises-cpp/tree/master/cmake_build_resources). The scripts assume a toolchain file is provided and located in the same folder, such as the one provided by this project. After building the project, a new "_build" folder should show up in the root folder of the project. If the user navigates into this new folder, an "_install" folder will feature all the binaries generated to run the exercises.
+
+**WARNING!** GNU/Linux assumed to be the build and testing environment. GNU compiler assumed as toolchain. If not the case, please modify both the root CMakeLists file of the project and the toolchain file accordingly in your local machine. Other enviroments and toolchains such as Windows and MSVC will be considered in the future.
 
 ## License
 None.
