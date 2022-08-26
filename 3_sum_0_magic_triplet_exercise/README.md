@@ -73,3 +73,7 @@ To achieve our goal:
 9. - If it's possible to get the number, iterate over the array until we reach the number or bounds overlap.
 10. - End of the nested loop. Increase lower bound until the value it holds no longer repeats to prevent repeated magic triplets from happening.
 11. - Repeat from step 6 until the lower bound reaches "max iterations" index.
+
+## Testing
+
+Modify "arrayOfNumbers" in the source code to try different combinations.
