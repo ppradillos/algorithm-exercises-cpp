@@ -58,4 +58,18 @@ arr is not necessarily sorted.
 
 ## Solution implemented
 
-TO-DO
+As we are trying to reach efficiency and good performance, then brute force is not allowed as valid approach. We propose a kind of "divide & conquer" approach instead, so that we will carry out as less operations as needed to get all *magic triplets* from the array of integers.
+
+To achieve our goal: 
+
+1. - Sort the given array.
+2. - Get the value of the mid position within the sorted array. Like in a binary search algortithm.
+3. - Check such value. If less than 0, then there are more negative values than positives, so we reverse the array's order to start from positives.
+4. - Iterating over an array from left to right is commonly more intuitive. In the previous step, we make sure we put negatives or positives on left side, depending on which subset is smaller, so we will iterate over less integers.
+5. - Get maximum strictly iterations needed to reach the end of the (smaller) subset, starting from the left. Passing through such array index would be pointless.
+6. - Start iterating over the array of integers. We add left bound position value + upper bound position value. Thank to the sorting operation, **this is actually a substraction** as both numbers should hold different sign. One of them should be positive or zero, the other one negative or zero.
+7. - Inverse the result of the previous addition (that is, multiply by -1). That's the number we must search within the rest of the array to complete the magic triplet.
+8. - Ensure the 3rd integer we shall look for is within the array's limits. If not, we don't even bother to look for it. Decrease upper bound and start from step 6.
+9. - If it's possible to get the number, iterate over the array until we reach the number or bounds overlap.
+10. - End of the nested loop. Increase lower bound until the value it holds no longer repeats to prevent repeated magic triplets from happening.
+11. - Repeat from step 6 until the lower bound reaches "max iterations" index.
