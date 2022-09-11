@@ -49,6 +49,7 @@ Thank to this naming convention, exercises can be easily identified from other e
 | SR No | Exercise |
 | ------ | ------ |
 |1 | [3 sum 0 Magic Triplet](https://github.com/ppradillos/algorithm-exercises-cpp/tree/master/3_sum_0_magic_triplet_exercise) |
+|2 | [Minimum number of coins](https://github.com/ppradillos/algorithm-exercises-cpp/tree/master/minimum_number_of_coins_exercise) |
 
 ## Build and Run the project
 
