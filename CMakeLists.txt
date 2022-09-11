@@ -37,7 +37,8 @@ INCLUDE_DIRECTORIES(${CMAKE_INSTALL_PREFIX}/include)
 LINK_DIRECTORIES(${CMAKE_INSTALL_PREFIX}/lib)
 
 #Add directories to the project
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/3_sum_0_magic_triplet ${CMAKE_CURRENT_BINARY_DIR}/3_sum_0_magic_triplet)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/3_sum_0_magic_triplet_exercise ${CMAKE_CURRENT_BINARY_DIR}/3_sum_0_magic_triplet_exercise)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/minimum_number_of_coins_exercise ${CMAKE_CURRENT_BINARY_DIR}/minimum_number_of_coins_exercise)
 
 #Export Target code into the root of current installation dir
 install(EXPORT ${PRODUCT_TARGET} DESTINATION .)

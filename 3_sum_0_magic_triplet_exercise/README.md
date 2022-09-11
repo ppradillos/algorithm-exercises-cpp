@@ -2,11 +2,11 @@
 
 ## Problem statement
 
-Given an integer array arr of size n, find all magic triplets in it.
+Given an integer array "arr" of size "n", find all magic triplets in it.
 
 Magic triplet is a group of three numbers whose sum is zero.
 
-Note that magic triplets may or may not be made of consecutive numbers in arr.
+Note that magic triplets may or may not be made of consecutive numbers in "arr".
 
 
 ### Example One
@@ -41,7 +41,7 @@ Output: [“2,-2,0”]
 
 ### Notes
 
-Input Parameters: Function has one argument: array of integers arr.
+Input Parameters: Function has one argument: array of integers "arr".
 
 Output: Function must return an array of strings. Each string (if any) in the array must represent a unique magic triplet and strictly follow this format: “1,2,-3” (no whitespace, one comma between numbers).
 
@@ -51,8 +51,8 @@ Triplets that only differ by order of numbers are considered duplicates, and dup
 
 Constraints:
 
-1 n
--1000 arr
+1 < n
+-1000 < arr[i]
 arr may contain duplicate numbers.
 arr is not necessarily sorted.
 
