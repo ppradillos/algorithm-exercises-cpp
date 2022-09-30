@@ -58,4 +58,4 @@ Just run the *build.sh* or *rebuild.sh* script within [cmake_build_resources](ht
 **WARNING!** GNU/Linux assumed to be the build and testing environment. GNU compiler assumed as toolchain. If not the case, please modify both the [root CMakeLists](https://github.com/ppradillos/algorithm-exercises-cpp/blob/master/CMakeLists.txt) file of the project and the [toolchain file](https://github.com/ppradillos/algorithm-exercises-cpp/blob/master/cmake_build_resources/toolchain-linux.cmake) accordingly in your local machine. Other enviroments and toolchains such as Windows and MSVC will be considered in the future.
 
 ## License
-None.
+MIT
